@@ -48,5 +48,4 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-
 updateScoreDisplay();
