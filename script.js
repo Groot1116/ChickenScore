@@ -36,5 +36,17 @@ function resetScore(player) {
   updateScoreDisplay();
 }
 
-// Initial display update on page load
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowUp") {
+    score1 += 0.5;
+    saveScores();
+    updateScoreDisplay();
+  } else if (event.key === "ArrowDown") {
+    score1 -= 0.5;
+    saveScores();
+    updateScoreDisplay();
+  }
+});
+
+
 updateScoreDisplay();
